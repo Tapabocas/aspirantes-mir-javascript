@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS HTML</title>
+  </head>
+  <body>
+    <label for="texto">Escribe algo:</label>
+    <input type="text" id="texto">
+    <button onclick = "policia()"> Convert to uppercase</button> 
+    <p id="resultado"></p>
+      <script>
+          const input = document.querySelector('#texto');
+          const resultado = document.querySelector('#resultado');
+          function policia() {
+            const texto = input.value.toUpperCase();
+            resultado.textContent = texto;
+};
+      </script>
+  </body>
+</html>

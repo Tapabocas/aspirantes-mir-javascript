@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Palindromo</title>
+  </head>
+  <body>
+    <label id="texto">Type a word to evaluate whether it is a palindrome or not :  </label>
+    <input type="text" id="esta">
+    <button class="btn" onclick="policia()">Validar</button>
+    <p id="resultado"></p>
+    <script>
+        const palabra= document.querySelector('#texto');     
+        function policia() {
+            let comparator= []
+            let input=document.getElementById('esta').value
+
+            let decomposed=Array.from(input) 
+
+            for (let i=(decomposed.length-1);i>=0;i--){
+              comparator.push(decomposed[i])            
+            }
+            word_1=JSON.stringify(comparator)
+            word_2=JSON.stringify(decomposed)
+            if (word_1==word_2){        
+              resultado.textContent = "It is indeed a palindrome";
+            }
+            else{
+             resultado.textContent = "It is not a palindrome, how sad :( " 
+            }
+          };
+    </script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ let pedro={
     edad:30,
     activo:true,
     hobbies:["programar", "squash", "piano"],
-    saluda: function saluda(){
+    saluda: function(){
         console.log("Hola, me llamo "+this.nombre)
     }
 }
@@ -25,16 +25,10 @@ for (i=0;i<valores.length;i++){
 
 pedro.saluda()
 
+
 /*
 
 Agrégale al objeto una función llamada saluda que retorne la frase “Hola, me llamo ” seguido del nombre de la persona.
 Llama la función saluda y verifica el resultado, debería decir “Hola, me llamo Pedro Perez”.
 
 */
-
-
-
-function saluda(name){
-    for (i=0;i<pedro.length;i++)
-    console.log("Hola me llamo "+pedro.nombre)
-}
